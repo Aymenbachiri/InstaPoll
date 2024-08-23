@@ -1,5 +1,4 @@
 export const ar = {
-  test: "اختبار",
   welcomeMessage: "مرحبا بك في InstaPoll",
   welcomeDescription:
     "أنشئ وشارك وشارك في الاستطلاعات حول المواضيع التي تهمك. اجعل صوتك مسموعاً ببضع نقرات بسيطة.",
@@ -8,4 +7,5 @@ export const ar = {
   feature1: "إنشاء استطلاعات مع خيارات مخصصة",
   feature2: "التصويت على مجموعة واسعة من المواضيع",
   feature3: "تتبع نتائج الاستطلاعات في الوقت الفعلي",
+  pollsHomeScreenTitle: "الاستطلاعات",
 };

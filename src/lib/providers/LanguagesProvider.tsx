@@ -86,7 +86,7 @@ export const LanguagesProvider: React.FC<{ children: React.ReactNode }> = ({
   );
 };
 
-export const useLanguage = () => {
+export const useTranslation = () => {
   const context = useContext(LanguageContext);
   if (context === undefined) {
     throw new Error("useLanguage must be used within a LanguageProvider");

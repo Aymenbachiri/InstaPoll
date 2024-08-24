@@ -1,6 +1,11 @@
-import { MyButtonProps } from "@/src/lib/types/reusableComponentsTypes";
+import { MyButtonProps } from "@Lib/types/reusableComponentsTypes";
 import { Button } from "react-native";
 
-export default function MyButton({ onPress, title, ...props }: MyButtonProps) {
+export default function MyButton({
+  onPress,
+  title,
+
+  ...props
+}: MyButtonProps) {
   return <Button title={title} onPress={onPress} {...props} />;
 }

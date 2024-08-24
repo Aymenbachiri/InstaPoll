@@ -38,6 +38,8 @@ export interface MyPressableProps extends PressableProps {
 export interface MyButtonProps extends ButtonProps {
   onPress: () => void;
   title: string;
+  className?: string;
+  style: string;
 }
 
 export interface MyTextInputProps extends TextInputProps {

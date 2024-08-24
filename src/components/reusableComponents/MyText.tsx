@@ -1,6 +1,6 @@
-import { responsiveHeight } from "@/src/lib/helpers/responsiveHeight";
-import { responsiveWidth } from "@/src/lib/helpers/responsiveWidth";
-import type { MyTextProps } from "@/src/lib/types/reusableComponentsTypes";
+import { responsiveHeight } from "@Lib/helpers/responsiveHeight";
+import { responsiveWidth } from "@Lib/helpers/responsiveWidth";
+import { MyTextProps } from "@Lib/types/reusableComponentsTypes";
 import { Text, StyleSheet } from "react-native";
 
 export default function MyText({

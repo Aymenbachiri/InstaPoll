@@ -1,4 +1,4 @@
-import type { MyPressableProps } from "@/src/lib/types/reusableComponentsTypes";
+import { MyPressableProps } from "@Lib/types/reusableComponentsTypes";
 import { Pressable } from "react-native";
 
 export default function MyPressable({

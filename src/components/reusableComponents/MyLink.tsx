@@ -1,4 +1,4 @@
-import type { MyLinkProps } from "@/src/lib/types/reusableComponentsTypes";
+import { MyLinkProps } from "@Lib/types/reusableComponentsTypes";
 import { type Href, Link } from "expo-router";
 
 export default function MyLink({ children, href, ...props }: MyLinkProps) {

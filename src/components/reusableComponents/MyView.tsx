@@ -1,6 +1,6 @@
-import { responsiveHeight } from "@/src/lib/helpers/responsiveHeight";
-import { responsiveWidth } from "@/src/lib/helpers/responsiveWidth";
-import type { MyViewProps } from "@/src/lib/types/reusableComponentsTypes";
+import { responsiveHeight } from "@Lib/helpers/responsiveHeight";
+import { responsiveWidth } from "@Lib/helpers/responsiveWidth";
+import { MyViewProps } from "@Lib/types/reusableComponentsTypes";
 import { View, StyleSheet } from "react-native";
 
 export default function MyView({

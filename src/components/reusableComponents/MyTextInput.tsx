@@ -1,4 +1,4 @@
-import type { MyTextInputProps } from "@/src/lib/types/reusableComponentsTypes";
+import { MyTextInputProps } from "@Lib/types/reusableComponentsTypes";
 import { TextInput } from "react-native";
 
 export default function MyTextInput({

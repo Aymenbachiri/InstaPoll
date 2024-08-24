@@ -1,6 +1,6 @@
-import { responsiveHeight } from "@/src/lib/helpers/responsiveHeight";
-import { responsiveWidth } from "@/src/lib/helpers/responsiveWidth";
-import type { MyTouchableOpacityProps } from "@/src/lib/types/reusableComponentsTypes";
+import { responsiveHeight } from "@Lib/helpers/responsiveHeight";
+import { responsiveWidth } from "@Lib/helpers/responsiveWidth";
+import { MyTouchableOpacityProps } from "@Lib/types/reusableComponentsTypes";
 import { TouchableOpacity } from "react-native";
 import { StyleSheet } from "react-native";
 

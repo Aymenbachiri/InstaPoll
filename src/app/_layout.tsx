@@ -19,6 +19,12 @@ export default function RootLayout() {
             headerRight: () => <HeaderRight />,
           }}
         />
+        <Stack.Screen
+          name="polls/[pollid]"
+          options={{
+            headerRight: () => <HeaderRight />,
+          }}
+        />
       </Stack>
     </LanguagesProvider>
   );

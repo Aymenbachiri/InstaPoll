@@ -1,4 +1,4 @@
-import type { MySafeAreaViewProps } from "@/src/lib/types/reusableComponentsTypes";
+import { MySafeAreaViewProps } from "@Lib/types/reusableComponentsTypes";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function MySafeAreaView({

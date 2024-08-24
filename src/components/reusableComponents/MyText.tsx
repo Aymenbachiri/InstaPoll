@@ -10,9 +10,10 @@ export default function MyText({
   style,
   ...props
 }: MyTextProps) {
+  const defaultFontSize = responsiveWidth(4);
   const styles = StyleSheet.create({
     responsiveStyle: {
-      fontSize: wp ? responsiveWidth(wp) : undefined,
+      fontSize: wp ? responsiveWidth(wp) : defaultFontSize,
       height: hp ? responsiveHeight(hp) : undefined,
     },
   });

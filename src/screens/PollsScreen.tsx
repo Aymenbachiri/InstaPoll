@@ -19,7 +19,7 @@ export default function PollsScreen() {
         }}
         renderItem={({ item }) => (
           <MyLink
-            href={`/polls/${item.id}`}
+            href={`/polls/${item.id}` as any}
             className="p-2 flex flex-row items-center mb-2 rounded-lg border border-gray-300 dark:border-gray-700"
           >
             <FontAwesome5
@@ -27,7 +27,7 @@ export default function PollsScreen() {
               size={24}
               color={colorScheme === "dark" ? "white" : "black"}
             />
-            <MyText wp={4} className="dark:text-white ml-3">
+            <MyText wp={4} className="dark:text-white flex-1 ml-3">
               {item.question}
             </MyText>
           </MyLink>

@@ -21,7 +21,6 @@ export default function PollDetailsScreen({
         >
           {poll?.question}
         </MyText>
-
         <MyView className="mt-4 mb-10 gap-4">
           {poll?.options.map((option) => (
             <MyPressable
@@ -44,10 +43,9 @@ export default function PollDetailsScreen({
             </MyPressable>
           ))}
         </MyView>
-
         <MyPressable
           onPress={vote}
-          className="mt-8 bg-blue-500 dark:bg-green-600 p-3 rounded-lg items-center"
+          className="mt-8 bg-blue-500 p-3 rounded-lg items-center"
         >
           <MyText className="text-white" wp={5}>
             Vote

@@ -1,5 +1,4 @@
-// src/contexts/LanguageContext.tsx
-import React, {
+import {
   createContext,
   useState,
   useContext,
@@ -10,8 +9,8 @@ import React, {
 import { I18n } from "i18n-js";
 import { getLocales } from "expo-localization";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { TranslationKeys } from "@/translations";
-import { ar, en, fr } from "@/src/translation";
+import { ar, en, fr } from "../../translation";
+import { TranslationKeys } from "translations";
 
 type LanguageContextType = {
   locale: string;
@@ -37,7 +36,7 @@ export const LanguagesProvider: React.FC<{ children: React.ReactNode }> = ({
         setLocaleState(savedLanguage || getLocales()[0].languageCode || "en");
       } catch (error) {
         console.error("Error loading language:", error);
-        setLocaleState("en"); // Fallback to English
+        setLocaleState("en");
       }
     };
 
@@ -75,7 +74,6 @@ export const LanguagesProvider: React.FC<{ children: React.ReactNode }> = ({
   );
 
   if (!locale) {
-    // You might want to show a loading indicator here
     return null;
   }
 

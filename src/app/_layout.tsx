@@ -1,6 +1,6 @@
+import HeaderRight from "@Components/HeaderRight";
+import { LanguagesProvider } from "@Lib/providers/LanguagesProvider";
 import { Stack } from "expo-router";
-import { LanguagesProvider } from "../lib/providers/LanguagesProvider";
-import HeaderRight from "../components/HeaderRight";
 
 export default function RootLayout() {
   return (

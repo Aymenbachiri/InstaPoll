@@ -1,4 +1,4 @@
-import LocaleSwitcher from "../lib/helpers/LocaleSwitcher";
+import LocaleSwitcher from "@Lib/helpers/LocaleSwitcher";
 import MyView from "./reusableComponents/MyView";
 import ThemeSwitcher from "./ThemeSwitcher";
 

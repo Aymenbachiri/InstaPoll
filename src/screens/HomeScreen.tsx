@@ -1,12 +1,14 @@
-import MyView from "../components/reusableComponents/MyView";
-import MyText from "../components/reusableComponents/MyText";
-import MySafeAreaView from "../components/reusableComponents/MySafeAreaView";
-import MyTouchableOpacity from "../components/reusableComponents/MyTouchableOpacity";
 import Animated from "react-native-reanimated";
-import MyImage from "../components/reusableComponents/MyImage";
 import { useHomeScreenAnimation } from "../lib/hooks/useHomeScreenAnimation";
-import MyLink from "../components/reusableComponents/MyLink";
 import { useTranslation } from "../lib/providers/LanguagesProvider";
+import {
+  MyImage,
+  MyLink,
+  MySafeAreaView,
+  MyText,
+  MyTouchableOpacity,
+  MyView,
+} from "@Components/reusableComponents";
 
 export default function HomeScreen() {
   const { animatedStyle } = useHomeScreenAnimation();

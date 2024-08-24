@@ -1,11 +1,13 @@
-import React from "react";
-import { FlatList, TouchableOpacity } from "react-native";
+import { FlatList } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
-import MyText from "../components/reusableComponents/MyText";
-import MyView from "../components/reusableComponents/MyView";
 import { useColorScheme } from "nativewind";
+import {
+  MyText,
+  MyTouchableOpacity,
+  MyView,
+} from "../components/reusableComponents";
 
-export default function PollScreen() {
+export default function PollsScreen() {
   const { colorScheme } = useColorScheme();
   const polls = [
     { id: 1, question: "What is your favorite color?" },
@@ -24,7 +26,7 @@ export default function PollScreen() {
         data={polls}
         contentContainerStyle={{ paddingBottom: 20, padding: 4, gap: 5 }}
         renderItem={({ item }) => (
-          <TouchableOpacity
+          <MyTouchableOpacity
             onPress={() => console.log(`Selected poll ID: ${item.id}`)}
             className="p-2 flex-row items-center mb-2 rounded-lg border border-gray-300 dark:border-gray-700 "
           >
@@ -36,7 +38,7 @@ export default function PollScreen() {
             <MyText wp={4} className="dark:text-white ml-3">
               {item.question}
             </MyText>
-          </TouchableOpacity>
+          </MyTouchableOpacity>
         )}
       />
     </MyView>

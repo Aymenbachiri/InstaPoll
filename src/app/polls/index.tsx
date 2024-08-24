@@ -1,5 +1,5 @@
-import { useTranslation } from "@/src/lib/providers/LanguagesProvider";
-import PollScreen from "@/src/screens/PollScreen";
+import { useTranslation } from "@Lib/providers/LanguagesProvider";
+import PollsScreen from "@Screens/PollsScreen";
 import { Stack } from "expo-router";
 
 export default function PollsHome() {
@@ -12,7 +12,7 @@ export default function PollsHome() {
           title: t("pollsHomeScreenTitle"),
         }}
       />
-      <PollScreen />
+      <PollsScreen />
     </>
   );
 }

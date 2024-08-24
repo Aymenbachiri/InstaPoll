@@ -1,5 +1,5 @@
 import { useColorScheme } from "nativewind";
-import MyTouchableOpacity from "../components/reusableComponents/MyTouchableOpacity";
+import MyTouchableOpacity from "@Components/reusableComponents/MyTouchableOpacity";
 import { Feather, FontAwesome } from "@expo/vector-icons";
 
 export default function ThemeSwitcher() {

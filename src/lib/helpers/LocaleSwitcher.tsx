@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { Modal } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import MyView from "@/src/components/reusableComponents/MyView";
-import MyTouchableOpacity from "@/src/components/reusableComponents/MyTouchableOpacity";
-import MyText from "@/src/components/reusableComponents/MyText";
 import { useTranslation } from "../providers/LanguagesProvider";
+import {
+  MyText,
+  MyTouchableOpacity,
+  MyView,
+} from "@Components/reusableComponents";
 
 export default function LocaleSwitcher() {
   const { locale, setLocale } = useTranslation();
